@@ -1,0 +1,18 @@
+//Elabore um programa para ler um número, calcular e informar o seu dobro.
+
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+
+	int numero, dobro;
+	
+	printf("Digite um número: ");
+	scanf("%d",&numero);
+	
+	dobro=numero * 2;
+	
+	printf("O dobro desse número é: %d",dobro);
+	
+	getch();
+}
