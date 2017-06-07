@@ -1,0 +1,15 @@
+//Elabore um programa para ler um número, calcular e informar o seu dobro.
+
+main(){
+	
+	int numero, dobro;
+	
+	cout<<"Digite um número: ";
+	cin>>numero;
+	
+	dobro=numero * 2;
+	
+	cout<<"O dobro é: "<<dobro;
+	
+	system("pause>null");
+}
