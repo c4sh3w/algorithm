@@ -1,0 +1,22 @@
+//Elabore um programa para ler um número, calcular e informar o seu dobro. 
+
+program AlgoritmoN1P001;
+
+uses
+    crt;
+
+var
+   numero, dobro: real;
+
+begin
+     gotoxy(01,01);
+     write('Digite um número: ');
+     readln(numero);
+
+     dobro:=numero * 2;
+
+     gotoxy(01,02);
+     write('O dobro é: ',dobro:2:0);
+
+     repeat until keypressed;
+end.
