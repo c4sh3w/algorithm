@@ -1,0 +1,20 @@
+//Crie um programa para ler dois números e informar a média aritmética e a metade da diferença entre eles
+
+import javax.swing.JOptionPane;
+
+class AlgoritmoN1J003{
+
+	public static void main (String args[]){
+ 
+		float numero1, numero2, media, metDif;
+  
+		numero1 = Float.parseFloat(JOptionPane.showInputDialog("Digite o 1º número: "));
+		numero2 = Float.parseFloat(JOptionPane.showInputDialog("Digite o 2º número: "));
+  
+		media = (numero1 + numero2)/2;
+		metDif = (numero1 - numero2)/2;
+  
+		JOptionPane.showMessageDialog(null, "A média é: " + media);
+		JOptionPane.showMessageDialog(null, "A metade da diferença é: " + metDif);
+	}
+}
