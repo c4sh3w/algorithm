@@ -1,3 +1,6 @@
+(*Crie um programa para ler dois números e informar a média aritmética e a
+metade da diferença entre eles*)
+
 program AlgoritmoN1P002;
 
 uses
