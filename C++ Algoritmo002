@@ -1,0 +1,21 @@
+/*Elabore um programa para ler um número, calcular e escrever a raiz quadrada e o quadrado deste número.*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+main(){
+	
+	float numero, raiz_quadrada, quadrado;
+	
+	cout<<"Digite um número: ";
+	cin>>numero;
+	
+	raiz_quadrada = sqrt(numero);
+	quadrado = pow(numero,2);
+	
+	cout<<"A raiz é: "<<raiz_quadrada;
+	cout<<"\nO quadrado é: "<<quadrado;
+	
+	system("PAUSE>null");
+}
