@@ -1,0 +1,24 @@
+/*Crie um programa para ler dois números e informar a média aritmética e a
+metade da diferença entre eles*/
+
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+	
+	float numero1, numero2, media, metade_diferenca;
+	
+	printf("Digite o 1º número: ");
+	scanf("%f",&numero1);
+
+	printf("Digite o 2º número: ");
+	scanf("%f",&numero2);
+	
+	media=(numero1 + numero2)/2;
+	metade_diferenca=(numero1 - numero2)/2;
+	
+	printf("A média é: %f",media);
+	printf("\nA metade da diferença é: %f",metade_diferenca);
+	
+	getch();
+}
