@@ -1,0 +1,21 @@
+/*Elabore um programa para ler um número, calcular e escrever a raiz quadrada e
+quadrado deste número.*/
+
+import javax.swing.JOptionPane;
+import java.lang.Math;
+
+class AlgoritmoN1J002{
+
+	public static void main (String[] args){
+
+		double numero, raiz_quadrada, quadrado;
+
+		numero = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite um número: "));
+
+		raiz_quadrada = Math.sqrt(numero);
+		quadrado = Math.pow(numero,2);
+
+		JOptionPane.showMessageDialog(null,"A raiz quadrada é: " + raiz_quadrada +
+		                                   "\nO quadrado é: "    + quadrado);
+		System.exit(0);
+	}
