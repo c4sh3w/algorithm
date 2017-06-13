@@ -1,0 +1,27 @@
+(*Elabore um programa para ler um número, calcular e escrever a raiz quadrada e
+quadrado deste número.*)
+
+program AlgoritmoN1P002;
+
+uses
+    crt;
+
+var
+   numero, raiz_quadrada, quadrado: real;
+
+begin
+     gotoxy(01,01);
+     write('Digite um número: ');
+     readln(numero);
+
+     raiz_quadrada:=sqrt(numero);
+     quadrado:=sqr(numero);
+
+     gotoxy(01,02);
+     write('A raiz quadrada é: ',raiz_quadrada:2:0);
+
+     gotoxy(01,03);
+     write('O quadrado é: ',quadrado:2:0);
+
+     repeat until keypressed;
+end.
