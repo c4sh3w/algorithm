@@ -1,0 +1,21 @@
+/*Elabore um programa para ler um número, calcular e escrever a raiz quadrada e o quadrado deste número.*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+main(){
+	
+	int numero, raiz_quadrada, quadrado;
+	
+	printf("Digite um número: ");
+	scanf("%d",&numero);
+	
+	raiz_quadrada = sqrt(numero);
+	quadrado = pow(numero,2);
+	
+	printf("A raiz quadrada é: %d",raiz_quadrada);
+	printf("\nO quadrado é: %d",quadrado);
+	
+	getch();
+}
