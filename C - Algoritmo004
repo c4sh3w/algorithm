@@ -1,0 +1,26 @@
+/*Faça o algoritmo de um programa para solicitar o nome e o salário de um
+empregado. Calcular e descontar 8% do seu salário. Informar o valor do desconto
+e o salário líquido a receber */
+
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+	
+	char nome;
+	float salario_bruto, desconto, salario_liquido;
+	
+	printf("Digite o nome do funcionário: ");
+	scanf("%s",&nome);
+	
+	printf("Digite o salário bruto: ");
+	scanf("%f",&salario_bruto);
+	
+	desconto=salario_bruto * 8 / 100;
+	salario_liquido = salario_bruto - desconto;
+	
+	printf("O valor do desconto é: %f",desconto);
+	printf("\nO salário líquido é: %f",salario_liquido);
+	
+	getch();
+}
