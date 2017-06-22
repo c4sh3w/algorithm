@@ -1,0 +1,23 @@
+/*Faça o algoritmo de um programa para solicitar o nome e o salário de um
+empregado. Calcular e descontar 8% do seu salário. Informar o valor do desconto
+e o salário líquido a receber */
+
+import javax.swing.JOptionPane;
+
+class AlgoritmoN1J004{
+
+	public static void main (String[] args){
+
+		String nome;
+		float salario_bruto, desconto, salario_liquido;
+
+		nome = JOptionPane.showInputDialog(null,"Digite o nome do funcionário: ");
+		salario_bruto = Float.parseFloat(JOptionPane.showInputDialog(null,"Digite o salário bruto do funcionário: "));
+
+		desconto = salario_bruto * 8 / 100;
+		salario_liquido = salario_bruto - desconto;
+
+		JOptionPane.showMessageDialog(null,"O desconto é de : " + desconto);
+		JOptionPane.showMessageDialog(null,"O salário líquido é de: " + salario_liquido);
+	}
+}
