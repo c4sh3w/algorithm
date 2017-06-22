@@ -1,0 +1,26 @@
+/*Faça o algoritmo de um programa para solicitar o nome e o salário de um
+empregado. Calcular e descontar 8% do seu salário. Informar o valor do desconto
+e o salário líquido a receber */
+
+#include <iostream>
+using namespace std;
+
+main(){
+	
+	string nome;
+	float salario_bruto, desconto, salario_liquido;
+	
+	cout<<"Digite o nome do funcionário: ";
+	cin>>nome;
+	
+	cout<<"Digite o salário bruto: ";
+	cin>>salario_bruto;
+	
+	desconto=salario_bruto * 8 / 100;
+	salario_liquido=salario_bruto - desconto;
+	
+	cout<<"O valor do desconto é de: "<<desconto;
+	cout<<"\nO valor do salário líquido é de: "<<salario_liquido;
+	
+	system("pause>null");
+}
