@@ -1,0 +1,35 @@
+(*Faça o algoritmo de um programa para solicitar o nome e o salário de um
+empregado. Calcular e descontar 8% do seu salário. Informar o valor do desconto
+e o salário líquido a receber *)
+
+program AlgoritmoN1P004;
+
+uses
+    crt;
+
+var
+   nome: string;
+   salario_bruto: real;
+   desconto: real;
+   salario_liquido: real;
+
+begin
+     gotoxy(01,01);
+     write('Digite o nome do funcionário: ');
+     readln(nome);
+
+     gotoxy(01,02);
+     write('Digite o salário bruto do funcionário: ');
+     readln(salario_bruto);
+
+     desconto:=salario_bruto * 8 / 100;
+     salario_liquido:=salario_bruto - desconto;
+
+     gotoxy(01,03);
+     write('O desconto aplicado de 8% é: ', desconto:2:0);
+
+     gotoxy(01,04);
+     write('O salário líquido é: ', salario_liquido:2:0);
+
+     repeat until keypressed;
+end.
