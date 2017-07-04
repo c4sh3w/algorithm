@@ -1,0 +1,37 @@
+/*Crie um algoritmo para ler a matrícula, o nome e o salário de dois empregados.
+Descontar 5% no salário do primeiro e acrescentar 9% no salário do segundo.
+Informar:
+a)o valor do desconto do primeiro;
+b)valor do acréscimo do segundo;
+c)salário final do primeiro;
+d)salário final do segundo;*/
+
+import javax.swing.JOptionPane;
+
+class AlgoritmoN1J005{
+
+	public static void main (String[] args){
+
+		String nome1, nome2, matricula1, matricula2;
+		float desconto, acrescimo, salario_bruto1, salario_bruto2, salario_liquido1, salario_liquido2;
+
+		matricula1 = JOptionPane.showInputDialog(null, "Digite a matrícula do primeiro empregado: ");
+		nome1 = JOptionPane.showInputDialog(null, "Digite o nome do primeiro empregado: ");
+		salario_bruto1 = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o salário bruto do primeiro empregado: "));
+
+		matricula2 = JOptionPane.showInputDialog(null, "Digite a matrícula do segundo empregado: ");
+		nome2 = JOptionPane.showInputDialog(null, "Digite o nome do segundo empregado: ");
+		salario_bruto2 = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite o salário bruto do segundo empregado: "));
+
+		desconto = salario_bruto1 * 5 / 100;
+		acrescimo = salario_bruto2 * 9 / 100;
+
+		salario_liquido1 = salario_bruto1 - desconto;
+		salario_liquido2 = salario_bruto2 + acrescimo;
+
+		JOptionPane.showMessageDialog(null,"O desconto do primeiro empregado é: "          + desconto + 
+						                           "\nO salário líquido do primeiro empregado é: " + salario_liquido1 + 
+						                           "\nO acréscimo do segundo empregado é: "        + acrescimo +
+						                           "\nO salário líquido do segundo empregado é: "  + salario_liquido2); 
+	}
+}
