@@ -1,0 +1,63 @@
+(*Crie um algoritmo para ler a matrícula, o nome e o salário de dois empregados.
+Descontar 5% no salário do primeiro e acrescentar 9% no salário do segundo.
+Informar:
+a)o valor do desconto do primeiro;
+b)valor do acréscimo do segundo;
+c)salário final do primeiro;
+d)salário final do segundo;*)
+
+program AlgoritmoN1P005;
+
+uses
+    crt;
+
+var
+   matricula1, matricula2, nome1, nome2: string;
+   desconto, acrescimo:real;
+   salario_liquido1, salario_liquido2, salario_bruto1, salario_bruto2: real;
+
+begin
+     gotoxy(01,01);
+     write('Digite a matrícula do primeiro empregado: ');
+     readln(matricula1);
+
+     gotoxy(01,02);
+     write('Digite o nome do primeiro empregado: ');
+     readln(nome1);
+
+     gotoxy(01,03);
+     write('Digite o salário bruto do primeiro empregado: ');
+     readln(salario_bruto1);
+
+     gotoxy(01,04);
+     write('Digite a matrícula do segundo empregado: ');
+     readln(matricula2);
+
+     gotoxy(01,05);
+     write('Digite o nome do segundo empregado: ');
+     readln(nome2);
+
+     gotoxy(01,06);
+     write('Digite o salário bruto do segundo empregado: ');
+     readln(salario_bruto2);
+
+     desconto := salario_bruto1 * 5/100;
+     acrescimo := salario_bruto2 * 9/100;
+
+     salario_liquido1 := salario_bruto1 - desconto;
+     salario_liquido2 := salario_bruto2 + acrescimo;
+
+     gotoxy(01,07);
+     write('O desconto do primeiro empregado é: ',desconto:2:0);
+
+     gotoxy(01,08);
+     write('O salário líquido do primeiro empregado é: ',salario_liquido1:2:0);
+
+     gotoxy(01,09);
+     write('O acréscimo do segundo empregado é: ',acrescimo:2:0);
+
+     gotoxy(01,10);
+     write('O salário líquido do segundo empregado é: ',salario_liquido2:2:0);
+
+     repeat until keypressed;
+end.
