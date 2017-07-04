@@ -1,0 +1,48 @@
+/*Crie um algoritmo para ler a matrícula, o nome e o salário de dois empregados.
+Descontar 5% no salário do primeiro e acrescentar 9% no salário do segundo.
+Informar:
+a)o valor do desconto do primeiro;
+b)valor do acréscimo do segundo;
+c)salário final do primeiro;
+d)salário final do segundo;*/
+
+#include <iostream>
+using namespace std;
+
+main(){
+	
+	string matricula1, matricula2, nome1, nome2;
+	float desconto, acrescimo, salario_bruto1, salario_bruto2, salario_liquido1, salario_liquido2;
+	
+	cout<<"Digite a matrícula do primeiro empregado: ";
+	cin>>matricula1;
+
+	cout<<"Digite o nome do primeiro empregado: ";
+	cin>>nome1;
+	
+	cout<<"Digite o salário bruto do primeiro empregado: ";
+	cin>>salario_bruto1;
+	
+	cout<<"Digite a matrícula do segundo empregado: ";
+	cin>>matricula2;
+
+	cout<<"Digite o nome do segundo empregado: ";
+	cin>>nome2;
+	
+	cout<<"Digite o salário bruto do segundo empregado: ";
+	cin>>salario_bruto2;	
+	
+	desconto = salario_bruto1 * 5 / 100;
+	acrescimo = salario_bruto2 * 9 / 100;
+	
+	salario_liquido1 = salario_bruto1 - desconto;
+	salario_liquido2 = salario_bruto2 + acrescimo;
+	
+	cout<<"\nO desconto do primeiro empregado é: "<<desconto;
+	cout<<"\nO salário líquido do primeiro empregado é: "<<salario_liquido1;
+	
+	cout<<"\nO acréscimo do segundo empregado é: "<<acrescimo;
+	cout<<"\nO salário líquido do segundo empregado é: "<<salario_liquido2;	
+	
+	system("pause > null");
+}
