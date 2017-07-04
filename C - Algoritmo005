@@ -1,0 +1,48 @@
+/*Crie um algoritmo para ler a matrícula, o nome e o salário de dois empregados.
+Descontar 5% no salário do primeiro e acrescentar 9% no salário do segundo.
+Informar:
+a)o valor do desconto do primeiro;
+b)valor do acréscimo do segundo;
+c)salário final do primeiro;
+d)salário final do segundo;*/
+
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+	
+	char matricula1, matricula2, nome1, nome2;
+	float desconto, acrescimo, salario_bruto1, salario_bruto2, salario_liquido1, salario_liquido2;
+	
+	printf("Digite a matrícula do primeiro empregado: ");
+	scanf("%s",&matricula1);
+
+	printf("Digite o nome do primeiro empregado: ");
+	scanf("%s",&nome1);
+	
+	printf("Digite o salário bruto do primeiro empregado: ");
+	scanf("%f",&salario_bruto1);
+	
+	printf("Digite a matrícula do segundo empregado: ");
+	scanf("%s",&matricula2);
+
+	printf("Digite o nome do segundo empregado: ");
+	scanf("%s",&nome2);
+	
+	printf("Digite o salário bruto do segundo empregado: ");
+	scanf("%f",&salario_bruto2);	
+	
+	desconto = salario_bruto1 * 5 / 100;
+	acrescimo = salario_bruto2 * 9 / 100;
+	
+	salario_liquido1 = salario_bruto1 - desconto;
+	salario_liquido2 = salario_bruto2 + acrescimo;
+	
+	printf("\nO desconto do primeiro empregado é: %f",desconto);
+	printf("\nO salário líquido do primeiro empregado é: %f",salario_liquido1);
+	
+	printf("\nO acréscimo do segundo empregado é: %f", acrescimo);
+	printf("\nO salário líquido do segundo empregado é: %f",salario_liquido2);
+	
+	getch();
+}
